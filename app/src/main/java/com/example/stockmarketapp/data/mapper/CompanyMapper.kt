@@ -1,16 +1,16 @@
 package com.example.stockmarketapp.data.mapper
 
 import com.example.stockmarketapp.data.local.CompanyListingEntity
-import com.example.stockmarketapp.domain.model.Company_Listing
+import com.example.stockmarketapp.domain.model.CompanyListing
 
-fun CompanyListingEntity.toCompany_Listing(): Company_Listing {
-    return Company_Listing(
+fun CompanyListingEntity.toCompanyListing(): CompanyListing {
+    return CompanyListing(
         name = name,
         symbol = symbol,
         exchange = exchange
     )
 }
-fun Company_Listing.toCompanyListingEntity(): CompanyListingEntity {
+fun CompanyListing.toCompanyListingEntity(): CompanyListingEntity {
     return CompanyListingEntity(
         name = name,
         symbol = symbol,
